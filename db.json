@@ -23,6 +23,36 @@
       "name": "Almas",
       "email": "almas@gmail.com",
       "password": "123456"
+    },
+    {
+      "name": "almas",
+      "email": "almas@gmail.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "name": "Aaru",
+      "email": "aaru@gmail.com",
+      "password": "989845",
+      "id": 6
+    },
+    {
+      "name": "afsgssgdg",
+      "email": "svzszv@gmail.com",
+      "password": "snfdsljkjhj",
+      "id": 7
+    },
+    {
+      "name": "Adil",
+      "email": "adil@gmail,com",
+      "password": "654654",
+      "id": 8
+    },
+    {
+      "name": "Bhai",
+      "email": "bhai@gmail.com",
+      "password": "98980022",
+      "id": 9
     }
   ]
 }
