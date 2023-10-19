@@ -2,45 +2,15 @@
   "user": [
     {
       "id": 1,
-      "name": "Almas",
+      "name": "Almas shaikh",
       "email": "almas@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": 2,
-      "name": "Almas",
-      "email": "almas@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": 3,
-      "name": "Almas",
-      "email": "almas@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": 4,
-      "name": "Almas",
-      "email": "almas@gmail.com",
-      "password": "123456"
-    },
-    {
-      "name": "almas",
-      "email": "almas@gmail.com",
-      "password": "12345",
-      "id": 5
+      "password": "nawab1609"
     },
     {
       "name": "Aaru",
       "email": "aaru@gmail.com",
       "password": "989845",
       "id": 6
-    },
-    {
-      "name": "afsgssgdg",
-      "email": "svzszv@gmail.com",
-      "password": "snfdsljkjhj",
-      "id": 7
     },
     {
       "name": "Adil",
@@ -53,6 +23,18 @@
       "email": "bhai@gmail.com",
       "password": "98980022",
       "id": 9
+    },
+    {
+      "name": "Imran",
+      "email": "imran@gmail.com",
+      "password": "963852",
+      "id": 11
+    },
+    {
+      "name": "dosti",
+      "email": "dosti@gmail.com",
+      "password": "0000000",
+      "id": 13
     }
   ]
 }

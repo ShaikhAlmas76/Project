@@ -3,13 +3,22 @@ import { MDBBadge, MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-reac
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
-
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Userdata() {
 
     const [userdata, setUserdata] = useState(null)
+
+    const navigate = useNavigate()
+
+
+    const Detail = (id) => {
+        navigate("/userdetail/" + id)
+    }
+
+    const Edit = (id) => {
+        navigate("/Useredit/" + id)
+    }
 
     useEffect(() => {
         fetch("http://localhost:5000/user").then((result) => {
@@ -21,6 +30,21 @@ export default function Userdata() {
             })
         })
     }, [])
+
+    const Delete = (id) => {
+        if (window.confirm('Do you want to remove ?')) {
+            fetch("http://localhost:5000/user/" + id, {
+                method: "DELETE"
+            }).then((res) => {
+                alert('Remove Successfully.')
+                window.location.reload();
+            }).catch((err) => {
+                console.log(err.message);
+            })
+        }
+    }
+
+
 
     return (
         <>
@@ -50,9 +74,9 @@ export default function Userdata() {
                                 <td>{item.password}</td>
                                 <td>
                                     <div className='btn-api'>
-                                        <button>Edit</button>
-                                        <button>Remove</button>
-                                        <button>Delete</button>
+                                        <button onClick={() => { Edit(item.id) }} >Edit</button>
+                                        <button onClick={() => { Delete(item.id) }}>Delete</button>
+                                        <button onClick={() => { Detail(item.id) }}>Detail</button>
                                     </div>
                                 </td>
                             </tr>
